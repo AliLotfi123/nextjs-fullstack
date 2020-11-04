@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Menu from "../components/Menu";
 
 export default function Home() {
   return (
@@ -11,21 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <ul>
-          <li>
-            <Link href="/products/">
-              <a>Products</a>
-            </Link>
-          </li>{" "}
-          <li>
-            <Link
-              href="/products/[category]"
-              as={`/products/some-products-category`}
-            >
-              <a>Some Product Category</a>
-            </Link>
-          </li>
-        </ul>
+        <Menu />
       </main>
 
       <footer className={styles.footer}>
