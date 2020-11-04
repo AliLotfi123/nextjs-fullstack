@@ -5,6 +5,7 @@ export default function ProductCategory() {
   return (
     <div>
       <h1>Category {router.query.category}</h1>
+      <button onClick={() => router.push("/")}>Homepage</button>
     </div>
   );
 }
