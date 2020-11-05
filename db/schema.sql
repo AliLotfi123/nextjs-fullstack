@@ -9,5 +9,5 @@ CREATE TABLE IF NOT EXISTS post (
   PRIMARY KEY (id)
 );
 
-INSERT INTO posts (id, title, content) 
+INSERT INTO post (id, title, content) 
 VALUES (1, 'using the serverless framework with AWS', 'This is the content of the the test post')

@@ -7,7 +7,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: myrootpassword
       MYSQL_USER: development
-      MYSQL_PASSWORD: development
+      MYSQL_PASSWORD: developer
       MYSQL_DATABASE: blog
     ports:
       - 127.0.0.1:3306:3306
