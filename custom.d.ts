@@ -7,3 +7,8 @@ declare namespace NodeJS {
     ports: string;
   }
 }
+interface Post {
+  id: number;
+  title: string;
+  content: string;
+}

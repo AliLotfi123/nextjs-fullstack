@@ -9,15 +9,10 @@ const db = mysql({
   },
 });
 
-// host: process.env.MYSQL_HOST,
-// database: process.env.MYSQL_DATABASE,
-// user: process.env.MYSQL_USER,
-// password: process.env.MYSQL_PASSWORD,
-
-// MYSQL_HOST: localhost;
-// MYSQL_ROOT_PASSWORD: myrootpassword;
-// MYSQL_USER: development;
-// MYSQL_PASSWORD: developer;
-// MYSQL_DATABASE: blog;
+export const getAllPosts = async () => {
+  const posts = await db.query<Post[]>("SELECT * FROM post ORDER BY id DESC");
+  await db.end();
+  return posts.map(({ id, title, content }) => ({ id, title, content }));
+};
 
 export default db;
