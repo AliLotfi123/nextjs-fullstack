@@ -2,11 +2,11 @@ import React from "react";
 import LayoutCSS from "./Layout.module.scss";
 import Menu from "./Menu";
 
-const Layout = (props: any) => {
+const Layout = ({ children }: any) => {
   return (
     <div className={LayoutCSS.container}>
       <Menu />
-      <main>{props.children}</main>
+      <main>{children}</main>
     </div>
   );
 };
