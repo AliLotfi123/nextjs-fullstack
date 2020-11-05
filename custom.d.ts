@@ -5,6 +5,7 @@ declare namespace NodeJS {
     MYSQL_PASSWORD: string;
     MYSQL_DATABASE: string;
     ports: string;
+    NEXT_PUBLIC_API_URL: string;
   }
 }
 interface Post {
